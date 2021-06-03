@@ -1,4 +1,5 @@
 import random
+
 class Cats:
     def __init__(self, asleep, height, setting, sound_after_eating):
         self.asleep= asleep
@@ -48,10 +49,15 @@ class Domestic_Cat(Cats):
 
 L = Lion(False, "wild", 1100, "Roar!!!!")
 print(L.sound_after_eating)
+
+
 C = Cheetah(False, "wild", 0,"Zzzzzzz")
 print(C.sound_after_eating)
+
+
 DC = Domestic_Cat(False, "domestic", 23,"Purrrrrrr")
 print(DC.sound_after_eating)
+
 DC.random_sound_after_eating(True)
 
 
