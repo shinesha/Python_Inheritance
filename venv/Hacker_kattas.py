@@ -51,3 +51,6 @@ def string_validator(string):
     else:
         print("False")
 
+
+def wrap(string, max_width):
+    return textwrap.fill(string, max_width)
