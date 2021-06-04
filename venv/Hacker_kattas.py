@@ -12,3 +12,42 @@ def count_substring(string, sub_string):
         if string[i:i+(len(sub_string))]==sub_string:
             count +=1
     return count
+
+
+def string_validator(string):
+
+    for i in s:
+        if i.isalnum() == True:
+            print("True")
+            break
+    else:
+        print("False")
+
+    for i in s:
+        if i.isalpha() == True:
+            print("True")
+            break
+    else:
+        print("False")
+
+    for i in s:
+        if i.isdigit() == True:
+            print("True")
+            break
+    else:
+        print("False")
+
+    for i in s:
+        if i.islower() == True:
+            print("True")
+            break
+    else:
+        print("False")
+
+    for i in s:
+        if i.isupper() == True:
+            print("True")
+            break
+    else:
+        print("False")
+
