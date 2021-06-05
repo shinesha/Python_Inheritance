@@ -54,3 +54,13 @@ def string_validator(string):
 
 def wrap(string, max_width):
     return textwrap.fill(string, max_width)
+
+
+from itertools import product
+def iter():
+    A = (map(int, input().split()))
+    B = list(map(int, input().split()))
+    mylist = []
+    mylist = (list(product(A, B)))
+
+    print(*[tuple(map(int, t)) for t in mylist])
