@@ -64,3 +64,16 @@ def iter():
     mylist = (list(product(A, B)))
 
     print(*[tuple(map(int, t)) for t in mylist])
+
+
+from itertools import permutations
+A = input()
+myList=[]
+for i in A:
+    if i.isalpha():
+        myList.append(i)
+B = list(permutations(myList, 2))
+C = sorted(B)
+for j in C:
+    c=''.join(j)
+    print(c)
