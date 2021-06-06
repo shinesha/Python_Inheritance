@@ -84,3 +84,15 @@ C = sorted(B)
 for j in C:
     c = ''.join(j)
     print(c)
+
+
+
+
+from itertools import combinations
+io = input().split()
+S = io[0]
+k = int(io[1])
+
+for j in range(1, k + 1):
+    for j in combinations(sorted(S), j):
+        print(''.join(j))
