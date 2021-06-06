@@ -67,13 +67,20 @@ def iter():
 
 
 from itertools import permutations
+
 A = input()
-myList=[]
+myList = []
+num = 0
 for i in A:
     if i.isalpha():
         myList.append(i)
-B = list(permutations(myList, 2))
+    elif i.isnumeric():
+        num = int(i)
+
+# print(myList)
+# array = [(x) for x in input().split()]
+B = list(permutations(myList, num))
 C = sorted(B)
 for j in C:
-    c=''.join(j)
+    c = ''.join(j)
     print(c)
