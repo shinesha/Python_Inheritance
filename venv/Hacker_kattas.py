@@ -96,3 +96,7 @@ k = int(io[1])
 for j in range(1, k + 1):
     for j in combinations(sorted(S), j):
         print(''.join(j))
+
+
+def print_full_name(first, last):
+    print('Hello', first, last+'! You just delved into python.' )
