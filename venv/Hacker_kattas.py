@@ -106,3 +106,15 @@ def split_and_join(line):
     a = line.split(" ")
     ab = "-".join(a)
     return ab
+
+
+def swap_case(s):
+    A=[]
+    for i in s:
+        if i.islower():
+            A.append(i.upper())
+        elif i.isupper:
+            A.append(i.lower())
+    str1 = ''.join(A)
+    return str1
+
