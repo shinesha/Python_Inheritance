@@ -118,3 +118,22 @@ def swap_case(s):
     str1 = ''.join(A)
     return str1
 
+
+
+import calendar
+A = input().split()
+B = calendar.weekday(int(A[2]),int(A[0]), int(A[1]))
+if B == 0:
+    print('MONDAY')
+elif B==1:
+    print('TUEDSAY')
+elif B==2:
+    print('WEDNESDAY')
+elif B==3:
+    print('THURSDAY')
+elif B==4:
+    print('FRIDAY')
+elif B==5:
+    print('SATURDAY')
+elif B == 6:
+    print('SUNDAY')
