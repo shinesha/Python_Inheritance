@@ -100,3 +100,9 @@ for j in range(1, k + 1):
 
 def print_full_name(first, last):
     print('Hello', first, last+'! You just delved into python.' )
+
+def split_and_join(line):
+    # write your code here
+    a = line.split(" ")
+    ab = "-".join(a)
+    return ab
